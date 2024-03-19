@@ -20,7 +20,7 @@
    [alias]
        control = "!f() { token='[PAT_Token_One]'; if [ $1 == "[first_trigger_name]" ]; then token='[PAT_Token_One]'; fi; echo $token | gh auth login --with-token; gh auth setup-git; }; f"
    ```
-   Fallowing is an example with dummy values,
+   Following is an example with dummy values,
     ```ini
     [alias]
         control = "!f() { token='iamtokenone'; if [ $1 == "[work]" ]; then token='iamtokentwo'; fi; echo $token | gh auth login --with-token; gh auth setup-git; }; f"
