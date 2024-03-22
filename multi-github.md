@@ -8,11 +8,17 @@
 
 ### Steps to Setup:
 
-1. **Open `.gitconfig` File:**
+1. **Obtain PAT ( Personal access Token):**
+
+    1. Click the profile icon on the top right corner.
+    2. Navigate to developer settings.
+    3. Select Personal Access Tokens and generate a token.
+
+3. **Open `.gitconfig` File:**
 
    Navigate to the `.gitconfig` file inside your Users folder.
 
-2. **Paste the Following Alias Configuration:**
+4. **Paste the Following Alias Configuration:**
 
    Add the following lines under the `[alias]` section in your `.gitconfig` file. Replace placeholders with valid values.
 
