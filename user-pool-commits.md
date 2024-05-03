@@ -34,7 +34,7 @@ celebrimbor() {
 }
 
 shelob() {
-    configure_commit_push "Shelob" "shelob@gmail.com>"
+    configure_commit_push "Shelob" "shelob@gmail.com"
 }
 
 # add function names defining users to this array
