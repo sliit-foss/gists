@@ -6,3 +6,4 @@ Welcome to the Gists repository of SLIIT FOSS. This repository is dedicated to h
 
 - [GitHub Account Switching Method with Two Accounts](multi-github.md)
 - [Running a MySQL Database Instance Using Docker](mysql-server-docker.md)
+- [Deletes all topics in An Azure service bus](az-sb-delete-all-topics.md)
