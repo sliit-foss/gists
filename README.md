@@ -6,3 +6,4 @@ Welcome to the Gists repository of SLIIT FOSS. This repository is dedicated to h
 
 - [GitHub Account Switching Method with Two Accounts](multi-github.md)
 - [Running a MySQL Database Instance Using Docker](mysql-server-docker.md)
+- [AzCopy Between Accounts](./azcopy-between-accounts.md)
