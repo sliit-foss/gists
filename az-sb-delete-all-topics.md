@@ -1,6 +1,6 @@
 # Deletes all topics in An Azure service bus
 
-## Prerequisites:
+## Prerequisites
 
 1. **Azure CLI Installed**: Ensure you have Azure CLI installed on your system. You can download and install it from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 
@@ -8,7 +8,7 @@
 
 3. **Access to Azure Service Bus**: You must have access to the Azure Service Bus namespace and the necessary permissions to delete topics.
 
-## Steps to Setup and Usage:
+## Steps to Setup
 
 1. **Authenticate with Azure**: Run `az login` command to authenticate with your Azure account.
 
@@ -38,11 +38,16 @@ az servicebus topic delete --resource-group $resource_group --namespace-name $na
 ---
 ---
 
-# Alternative
+# Alternative Method
 
 **Using `--query` global parameter**\
 Uses JMESPath query string. See [Here](http://jmespath.org/) for more information and examples.
 
+## Steps to Setup
+
+1. **Authenticate with Azure**: Run `az login` command to authenticate with your Azure account.
+
+2. **Save the Script**: Save the script with a `.sh` extension, for example, `delete_servicebus_topics.sh`.
 ```bash
 #!/bin/bash
 
