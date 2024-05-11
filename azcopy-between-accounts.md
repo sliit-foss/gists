@@ -11,7 +11,7 @@ AzCopy is a command-line utility provided by Microsoft for efficiently transferr
 
 4. **Azure Blob Container**: Create Blob containers within your Azure Storage accounts for storing data.
 
-#### Guidlines
+#### Guidelines
 
 - If you're using Microsoft Entra authorization for both source and destination, then both accounts must belong to the same Microsoft Entra tenant.
 
