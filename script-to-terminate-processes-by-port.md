@@ -23,22 +23,22 @@
     port=$1
 
     # Check if any process is running on the specified port
-    if sudo lsof -i :$port >/dev/null 2>&1; then
+    if lsof -i :$port >/dev/null 2>&1; then
         # Get the PID(s) of the process(es) running on the port
-        pids=$(sudo lsof -t -i :$port)
+        pids=$(lsof -t -i :$port)
 
         # Attempt to terminate the processes running on the specified port
-        sudo_kill() {
+        terminate_task() {
             local pid=$1
-            local exec_name=$(sudo ps -p $pid -o comm=)
-            local process_name=$(sudo ps -p $pid -o args=)
+            local exec_name=$(ps -p $pid -o comm=)
+            local process_name=$(ps -p $pid -o args=)
             
-            sudo kill $pid
+            kill $pid
             
             # Check if the process is still running after sending SIGTERM
             sleep 3
-            if sudo ps -p $pid >/dev/null; then
-                sudo kill -9 $pid
+            if ps -p $pid >/dev/null; then
+                kill -9 $pid
                 echo "Process ($pid) - $exec_name ($process_name) did not terminate after SIGTERM and was forcefully killed with SIGKILL."
             else
                 echo "Process ($pid) - $exec_name ($process_name) terminated successfully."
@@ -46,7 +46,7 @@
         }
 
         for pid in $pids; do
-            sudo_kill $pid
+            terminate_task $pid
         done
     else
         echo "No processes found running on port $port."
