@@ -8,4 +8,4 @@ Welcome to the Gists repository of SLIIT FOSS. This repository is dedicated to h
 - [Running a MySQL Database Instance Using Docker](mysql-server-docker.md)
 - [AzCopy Between Accounts](./azcopy-between-accounts.md)
 - [Running database Servers Instantly with Docker Compose](./docker-deploy-instant-dbs.md)
-- [Script to terminate a running task on a port](./script-to-terminate-processes-by-port.md)
+- [Script to terminate running tasks on a port](./script-to-terminate-processes-by-port.md)
