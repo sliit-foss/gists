@@ -1,4 +1,4 @@
-# Script to terminate a running task on a port
+# Script to terminate running tasks on a port
 ## Prerequisites
 - `sudo` privileges for executing commands as root
 
