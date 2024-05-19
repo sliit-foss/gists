@@ -57,6 +57,63 @@
     ```bash
     chmod +x terminate_process_on_port.sh
     ```
+### Optionals
+
+- **Add alias**
+
+    Be sure to change the `/path/to/terminate_process_on_port.sh` with actual path.
+
+    - **For Bash**
+      ```bash
+      echo "alias freeport='/path/to/terminate_process_on_port.sh'" >> ~/.bashrc
+      ```
+      ```bash
+      source ~/.bashrc
+      ```
+    - **For Zsh**
+      ```bash
+      echo "alias freeport='/path/to/terminate_process_on_port.sh'" >> ~/.zshrc
+      ```
+      ```bash
+      source ~/.zshrc
+      ```
+    - **For Fish**
+      ```bash
+      echo "alias freeport '/path/to/terminate_process_on_port.sh'" >> ~/.config/fish/config.fish
+      ```
+      ```bash
+      source ~/.config/fish/config.fish
+      ```
+### Or
+- **Add to path**
+    
+    Move the script to local bin then add that path to env PATH.
+    ```bash
+    mkdir -p ~/.local/bin
+    mv ~/terminate_process_on_port.sh ~/.local/bin/freeport
+    ```
+
+    - **For Bash**
+      ```bash
+      echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+      ```
+      ```bash
+      source ~/.bashrc
+      ```
+    - **For Zsh**
+      ```bash
+      echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+      ```
+      ```bash
+      source ~/.zshrc
+      ```
+    - **For Fish**
+      ```bash
+      echo 'set -Ux fish_user_paths $HOME/.local/bin $fish_user_paths' >> ~/.config/fish/config.fish
+      ```
+      ```bash
+      source ~/.config/fish/config.fish
+      ```
 
 ## Usage
 Run the script with the following command:
@@ -64,9 +121,18 @@ Run the script with the following command:
 ./terminate_process_on_port.sh <port>
 ```
 Replace `<port>` with the port number where you want to terminate the process running on.
+>
+>Run the following command if followed through any of the optional setup:
+>```bash
+>freeport <port>
+>```
 
 ### Example:
 To terminate a process running on port `8080`, run:
 ```bash
 ./terminate_process_on_port.sh 8080
 ```
+>or
+>```bash
+>freeport 8080
+>```
