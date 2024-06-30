@@ -1,6 +1,13 @@
 # <center>WhatsApp Bot installation - Multi Device </center>
 ## Description
-This is a WhatsApp bot installation guide for [levanter](https://github.com/lyfe00011/whatsapp-bot-md.git) bot. The bot is unofficial and is not affiliated with WhatsApp. 
+This is a WhatsApp bot installation guide for [levanter](https://github.com/lyfe00011/whatsapp-bot-md.git) bot. The bot is unofficial and is not affiliated with WhatsApp.
+
+## Usages
+- This bot can be used to automate tasks on WhatsApp.
+- It can help you download social media posts and videos ( facebook, instagram, twitter, youtube, etc). 
+- It can help you to get information about a movie, series, anime, etc.
+- You also can make custom plugins for the bot.
+- There are many more features available in the bot.
 
 ## Prerequisites
 - A smartphone with an active WhatsApp account.
