@@ -33,7 +33,7 @@ Replace "incorrect_email@example.com" with the incorrect email address, "new_aut
 Execute the following command in your Git repository:
 
    ```bash
-WRONG_EMAIL=${1:-"pasindu.dinal@qlub.io"}
+WRONG_EMAIL=${1:-"user@gmail.com"}
 NEW_NAME=${2:-"dinal-rock"}
 NEW_EMAIL=${3:-"mrmihiraj@gmail.com"}
 
@@ -49,6 +49,20 @@ fi
 " --tag-name-filter cat -- --branches --tags;
    ```
 
+#### Explanation of the Command:
+
+- `${1}`: Refers to the first argument passed to the script.
+- `:-"default"`: Provides a default value if no argument is passed.
+
+This means if you don't pass any arguments when running the script, it will use the default values provided. If you pass arguments, it will use those instead.
+In this context if you run the script without any arguments, it will use the default values for the email and name. If you pass arguments, it will use those values instead.
+
+- **`--env-filter`:** Specifies a filter to modify the environment (e.g., author and committer details) for each commit.
+- **`--tag-name-filter cat`:** Ensures that tags are filtered but unchanged.
+- **`-- --branches --tags`:** Specifies that all branches and tags should be rewritten.
+
+For more detailed information about these flags, you can refer to the [Git filter-branch documentation](https://git-scm.com/docs/git-filter-branch).
+
 4. **Verify Changes:**
 
 After running the command, verify that the commit history has been updated correctly by checking a few commits.
@@ -62,7 +76,9 @@ git push --force
 ```
 
 Note: Be cautious when force-pushing, as it can overwrite history for other collaborators.
-Conclusion
+
+6. **Conclusion**
+
 Rewriting commit history can be useful for correcting inaccurate information. However, it's essential to use this command carefully, especially if you're working in a shared repository.
 
 Always ensure you have a backup of your repository before performing any history rewriting operations.
