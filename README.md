@@ -11,6 +11,7 @@ Welcome to the Gists repository of SLIIT FOSS. This repository is dedicated to h
 - [Script to terminate running tasks on a port](./script-to-terminate-processes-by-port.md)
 
 ### Volume 2
-- [Postman script to format request body](./postman-script-to-format-request-body.md)
+- [Postman Pre-request Script for Formatting Request Body](./postman-script-to-format-request-body.md)
+- [Make git commits from a user pool](./user-pool-commits.md)
 - [VS Code Task for Automatic Dev Server Launch](./script-to-terminate-processes-by-port.md)
 - [One-Line Command for Bulk Updating npm Packages with pnpm"](./vscode-task-configuration.md)
